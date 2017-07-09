@@ -1,6 +1,7 @@
 #ifndef H_XD_FACTORY
 #define H_XD_FACTORY
 
+#include <utility>
 #include <xd/config.hpp>
 #include <boost/config.hpp>
 

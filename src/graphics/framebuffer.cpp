@@ -53,7 +53,7 @@ void xd::framebuffer::attach_texture(xd::texture::ptr texture, int slot, bool is
 
 	GLenum error = glGetError();
 	if (error == GL_INVALID_OPERATION) {
-		throw std::exception("Could not attach texture to framebuffer object");
+		throw std::runtime_error("Could not attach texture to framebuffer object");
 	}
 
 	GLenum draw_buffers[1] = { GL_COLOR_ATTACHMENT0_EXT + slot };
