@@ -1,5 +1,10 @@
 #include <xd/system/input.hpp>
+
+#ifdef USE_LINUX_INCLUDE_PATHS
+#include <GLFW/glfw3.h>
+#else
 #include <GL/glfw3.h>
+#endif
 
 namespace xd
 {

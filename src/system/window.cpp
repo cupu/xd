@@ -1,5 +1,9 @@
 #include <GL/glew.h>
+#ifdef USE_LINUX_INCLUDE_PATHS
+#include <GLFW/glfw3.h>
+#else
 #include <GL/glfw3.h>
+#endif
 #include <xd/system/window.hpp>
 #include <xd/system/exceptions.hpp>
 
