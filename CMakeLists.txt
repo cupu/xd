@@ -48,3 +48,9 @@ ADD_DEFINITIONS(-DUSE_LINUX_INCLUDE_PATHS)
 ADD_LIBRARY(xd STATIC ${SOURCES})
 ADD_DEPENDENCIES(xd LuaBind)
 
+#TARGET_INCLUDE_DIRECTORIES(xd INTERFACE include/) - this does not work how I expect it yet
+
+INSTALL(TARGETS xd 
+	ARCHIVE DESTINATION lib)
+	#INCLUDES DESTINATION include) - and since my expectations are not correct ...
+
